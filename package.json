@@ -1,0 +1,37 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "jest --coverage",
+  "test:watch": "jest --watchAll"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "node-ipinfo": "^4.0.1",
+    "nodemon": "^3.1.9",
+    "pino": "^9.6.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^2.1.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+  "testEnvironment": "node",
+  "coverageDirectory": "./coverage",
+  "collectCoverageFrom": [
+    "services/**/*.js",
+    "controllers/**/*.js"
+  ]
+}
+}
